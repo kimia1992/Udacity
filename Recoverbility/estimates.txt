@@ -1,0 +1,33 @@
+1) Minimum RTO for a single AZ outage
+
+00:00: AZ goes down happens
+00:05: Alert triggers
+00:20: On call staff gets up, starts computer, logs in to vpn
+00:35: Issue is diagnosed as single az has gone down
+00:40: Begins recovery process of the db in that AZ
+01:10: AZ comes up, db restarts, primary db recovers data it has lost and traffic starts flowing to recovered AZ
+
+2) Minimum RTO for a single region outage
+
+00:00: AZ goes down happens
+00:05: Alert triggers
+00:20: On call staff gets up, starts computer, logs in to vpn
+00:35: Issue is diagnosed as single region has gone down
+00:40: Begins recovery process of the db in that region in AZ1
+00:45: Begins recovery process of the db in that region in AZ2
+01:15: AZ1 comes up, db restarts, primary db recovers data it has lost and traffic starts flowing to recovered AZ1 (5 mins longer than 1) as it needs to recvover data from another az)
+01:20: AZ2 comes up, db restarts, primary db recovers data it has lost and traffic starts flowing to recovered AZ2 (5 mins longer than 1) as it needs to recvover data from another az)
+
+Assumption: Region that went down had 2 AZs
+
+3) Minimum RPO for a single AZ outage
+
+If database snapshot can be taken every minute, minimum rpo = 1 min.
+Example- If database fails at 7 am, it can be recovered upto the state at 6:59 am
+
+
+4) Minimum RPO for a single region outage
+
+If database snapshot can be taken every minute, minimum rpo = 1.5 min.
+Example- If database fails at 7 am, it can be recovered upto the state at 6:58:45 am. Minimum time required is slightly greater that single AZ failure as it has to recover from data present in another region which is at a longer distance.
+

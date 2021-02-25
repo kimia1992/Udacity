@@ -1,0 +1,24 @@
+MySQL [Udacity]> select * from Books;
+ERROR 2006 (HY000): MySQL server has gone away
+No connection. Trying to reconnect...
+Connection id:    9
+Current database: Udacity
+
++--------+--------------+-------------+
+| BookId | BookName     | Author      |
++--------+--------------+-------------+
+|      1 | Harry Potter | J K Rowling |
++--------+--------------+-------------+
+1 row in set (0.03 sec)
+
+MySQL [Udacity]> INSERT INTO Books values(2, 'The Da Vinci code', 'Dan Brown');
+Query OK, 1 row affected (0.01 sec)
+
+MySQL [Udacity]> select * from Books;
++--------+-------------------+-------------+
+| BookId | BookName          | Author      |
++--------+-------------------+-------------+
+|      1 | Harry Potter      | J K Rowling |
+|      2 | The Da Vinci code | Dan Brown   |
++--------+-------------------+-------------+
+2 rows in set (0.00 sec)
