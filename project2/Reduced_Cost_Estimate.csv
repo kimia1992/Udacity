@@ -1,0 +1,27 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,2102.2,25226.4,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (7.5 TB), Quantity (1), Instance type (db.m1.large), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,192.61,2311.32,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (50 GB), Instance type (a1.metal)"
+My Estimate,US East (N. Virginia),,Amazon EC2,2859.26,248.27,5838.5,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year Partial Upfront), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2,5603.77,10,5723.77,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year All Upfront), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2,5603.77,10,5723.77,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year All Upfront), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,987.3,11847.6,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,1801.27,21615.24,USD,Number of Application Load Balancers (3)
+My Estimate,US East (N. Virginia),,S3 Standard,0,235.52,2826.24,USD,S3 Standard storage (10 TB per month)
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+What have I done?,,,,,,,,
+1) Pricing strategy on ec2:,,,,,,,,
+"Changed it to all upfront for some ec2. This is not possible each time and hence changed few ec2 to ""Partial upfront""",,,,,,,,
+2) Scaled down resource,,,,,,,,
+"Scaled down cpu, ram and storage on ec2",,,,,,,,
+Scaled down strage on database,,,,,,,,
+3) Chose region wisely,,,,,,,,
+Region cheaper than a lot other,,,,,,,,
+4) Chose the correct ec2 type,,,,,,,,
+gp2 ssd and not a on demand but a reserved instance for an year to get better pricing,,,,,,,,
+Cost exlorer can be used to get better ideas.,,,,,,,,

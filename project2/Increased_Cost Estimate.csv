@@ -1,0 +1,34 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4204.4,50452.8,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (7.5 TB), Quantity (2), Instance type (db.m1.large), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,192.61,2311.32,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (50 GB), Instance type (a1.metal)"
+My Estimate,US East (N. Virginia),,Amazon EC2,5603.77,10,5723.77,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year All Upfront), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2,5603.77,10,5723.77,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year All Upfront), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2,5603.77,10,5723.77,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year All Upfront), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,987.3,11847.6,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,1801.27,21615.24,USD,Number of Application Load Balancers (3)
+My Estimate,US East (N. Virginia),,S3 Standard,0,235.52,2826.24,USD,S3 Standard storage (10 TB per month)
+My Estimate,US East (N. Virginia),,S3 Standard,0,235.52,2826.24,USD,S3 Standard storage (10 TB per month)
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,1801.27,21615.24,USD,Number of Application Load Balancers (3)
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,1801.27,21615.24,USD,Number of Application Load Balancers (3)
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,1171.62,14059.44,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Amazon EC2,5603.77,10,5723.77,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year All Upfront), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2,5603.77,10,5723.77,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year All Upfront), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2,5603.77,10,5723.77,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year All Upfront), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,1651.03,19812.36,USD,"Operating system (Linux), Quantity (3), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (500 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4455.28,53463.36,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (7 TB), Quantity (2), Instance type (db.m1.large), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (5 TB)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+"What have I done?
+1) Made it more reliable by duplicating all the resources in a new az
+2) Pricing strategy on ec2:
+Changed it to all pay later to save some cash at the current time
+3) Scaled up resource
+Scaled up cpu, ram and storage on ec2
+Scaled up starage on database
+4) Added more instances to db and ec2 to make it more reliable
+5) Increased number of requests elb can handle
+6) Increased capacity of NAT gateway to avoid any congestion due to traffic",,,,,,,,
