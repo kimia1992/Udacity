@@ -1,0 +1,23 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+Checkov, Terrafirma, Accurics, CloudSploit
+### Example vulnerability
+Public accessible SSH, cloud storage services, internet-accessible databases, configuring some open-security groups
+
+##Scan AMI’s or containers for OS vulnerabilities
+Anchore, Clair, Dagda, OpenSCAP, Sysdig Falco
+
+### Example vulnerability
+Dockerfile directive 'HEALTHCHECK' not found, matching condition 'not_exists' check
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config, Cloud Custodian, Prowler, Cloudmapper, Cloud Reports, AWStealth, Salesforce Policy sentry,
+Komiser, Alien Vault, CloudSploit, Skyhigh, Qualys, ScoutSuite, Alert Logic, AWS Trusted Advisor
+### Example vulnerability
+Sensitive information leakage, attacker hacks the AWS account
+
+Sources:
+https://geekflare.com/iac-security-scanner/
+https://opensource.com/article/18/8/tools-container-security
+https://geekflare.com/aws-vulnerability-scanner/

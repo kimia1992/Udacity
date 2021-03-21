@@ -1,0 +1,36 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+1) Account password policy for IAM users requires minimum password length.
+2) Elastic Load Balancing doesnot have deletion protection disabled
+3) EBS volumes that are in an attached state are not encrypted
+4) Logging is not enabled for Application Load Balancer and the Classic Load Balancer
+5) password reuse is not prevented
+6)  account password policy for IAM users is not set to expire
+7)  Amazon Elastic Compute Cloud (Amazon EC2) instance metadata version is not configured with Instance Metadata Service Version 2 (IMDSv2).
+8) AWS CloudTrail trails are not configured to send logs to Amazon CloudWatch logs.
+9) CloudTrail logs are not encrypted at rest using KMS CMKs
+10) HTTP listeners of Application Load Balancers do not have HTTP to HTTPS redirection configured.
+11) he value of routing.http.drop_invalid_header_fields.enabled is set to false.
+12) point in time recovery is not enabled for Amazon DynamoDB tables
+13) Amazon Elastic Block Store (EBS) encryption is not enabled
+14) publicIp field is present in the Amazon EC2 instance configuration item.
+15)  S3 buckets have policies that require requests to not use Secure Socket Layer (SSL).
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+1) Account password policy for IAM users should require minimum password length.
+2) Elastic Load Balancing should deletion protection disabled
+3) EBS volumes that are in an attached state should be encrypted
+4) Logging should be enabled for Application Load Balancer and the Classic Load Balancer
+5) Password reuse should prevented
+6) Account password policy for IAM users should be set to expire
+7) Amazon Elastic Compute Cloud (Amazon EC2) instance metadata version should be configured with Instance Metadata Service Version 2 (IMDSv2).
+8) AWS CloudTrail trails should be configured to send logs to Amazon CloudWatch logs.
+9) CloudTrail logs should be encrypted at rest using KMS CMKs
+10) HTTP listeners of Application Load Balancers should always have HTTP to HTTPS redirection configured.
+11) The value of routing.http.drop_invalid_header_fields.enabled should be set to true.
+12) Point in time recovery should be enabled for Amazon DynamoDB tables
+13) Amazon Elastic Block Store (EBS) encryption should always be enabled
+14) PublicIp field should not be present in the Amazon EC2 instance configuration item.
+15) S3 buckets have policies that require requests to always use Secure Socket Layer (SSL).
+
