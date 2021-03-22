@@ -3,19 +3,32 @@
 ## Scan infrastructure as code templates
 Checkov, Terrafirma, Accurics, CloudSploit
 ### Example vulnerability
-Public accessible SSH, cloud storage services, internet-accessible databases, configuring some open-security groups
+Example: Checkov
+Install Checkov from PyPI using pip
+Select a folder containing Cloudformation or Terraform files as an input
+Run scanning
+Export the result to CLI print
+Will provide you results like Public accessible SSH, cloud storage services, internet-accessible databases, configuring some open-security groups
 
 ##Scan AMI’s or containers for OS vulnerabilities
 Anchore, Clair, Dagda, OpenSCAP, Sysdig Falco
 
 ### Example vulnerability
 Dockerfile directive 'HEALTHCHECK' not found, matching condition 'not_exists' check
+Example: Anchore
+Vulnerability ID|Package|Severity|Fix|Vulnerability URL
+CVE-2017-1000379|linux-libc-dev-4.9.88-1+deb9u1|High|None|https://security-tracker.debian.org/tracker/CVE-2017-1000379
+CVE-2017-14062|libidn11-1.33-1|High|None|https://security-tracker.debian.org/tracker/CVE-2017-14062
+CVE-2017-15400|libcups2-2.2.1-8+deb9u1|High|None|https://security-tracker.debian.org/tracker/CVE-2017-15400
+CVE-2017-17458|mercurial-4.0-1+deb9u1|High|None|https://security-tracker.debian.org/tracker/CVE-2017-17458
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
 AWS Config, Cloud Custodian, Prowler, Cloudmapper, Cloud Reports, AWStealth, Salesforce Policy sentry,
 Komiser, Alien Vault, CloudSploit, Skyhigh, Qualys, ScoutSuite, Alert Logic, AWS Trusted Advisor
 ### Example vulnerability
 Sensitive information leakage, attacker hacks the AWS account
+Eaxmple: AWS config
+EBS volumes that are in an attached state are not encrypted.
 
 Sources:
 https://geekflare.com/iac-security-scanner/
