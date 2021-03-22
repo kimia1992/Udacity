@@ -7,3 +7,4 @@ Only a particular IAM role should have had access to our EC2 instance
 
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
 Secret recipe bucket should be setup in such a way that only certain users have access to it. Would assign the users a specific role.
+Create a role "secretUserRole".  Attach policy "secretPolicy" This policy is configured such that it can only READ from secretBucket. This prevents hackers from downloading any data even if they steal creds. Providing least privilege helps.

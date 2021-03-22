@@ -8,3 +8,6 @@ It is happening on PORT 22.
  In combination with information gleaned from your VPC Flow Logs, AWS CloudTrail Event Logs, and DNS logs, this allows GuardDuty to detect many different types of dangerous and mischievous behavior including probes for known vulnerabilities, port scans and probes, and access from unusual locations.
  On the AWS side, it looks for suspicious AWS account activity such as unauthorized deployments, unusual CloudTrail activity, patterns of access to AWS API functions, and attempts to exceed multiple service limits.
  GuardDuty will also look for compromised EC2 instances talking to malicious entities or services, data exfiltration attempts, and instances that are mining cryptocurrency.
+
+ In this case, multiple events and data streams from VC flow logs, cloud trail was used in combination of machine learning to determine the attack.
+
